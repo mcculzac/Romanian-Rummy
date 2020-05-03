@@ -68,7 +68,7 @@ class Board:
 
         shuffle(all_tiles)
 
-        board = [all_tiles[i:i+7] for i in range(0, 15, 7)]
+        board = [all_tiles[i:i+7] for i in range(0, 105, 7)]
         flip = all_tiles[-1]
         return board, flip
 
