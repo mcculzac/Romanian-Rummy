@@ -64,14 +64,13 @@ class Board:
             for color in ['red', 'orange', 'blue', 'black']:
                 for number in range(1, 14):
                     all_tiles.append(Tile(color=color, number=number))
-            all_tiles.append(Tile(color=color, joly=True))
+        all_tiles.append(Tile(color='red', joly=True))
+        all_tiles.append(Tile(color='black', joly=True))
 
         shuffle(all_tiles)
 
         board = [all_tiles[i:i+7] for i in range(0, 105, 7)]
         flip = all_tiles[-1]
         return board, flip
-
-
 
 
